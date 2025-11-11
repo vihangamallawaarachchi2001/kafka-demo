@@ -96,15 +96,6 @@ docker compose down -v
 
 
 📁 Project Structure
-
-
-1
-2
-3
-4
-5
-6
-7
 .
 ├── docker-compose.yaml    # Kafka + Redis services
 ├── redis.conf             # Redis config (AOF enabled)
