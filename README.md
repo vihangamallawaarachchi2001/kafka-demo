@@ -18,11 +18,8 @@ git clone https://github.com/your-username/kafka-redis-demo.git
 cd kafka-redis-demo
 
 2. Start Kafka and Redis
-bash
 
-
-1
-docker compose up -d
+  docker compose up -d
 
 
 
@@ -35,11 +32,8 @@ This will launch:
 3. Run the event processor
 
 In a new terminal, activate your virtual environment and run:
-bash
 
-
-1
-python3 processor.py
+  python3 processor.py
 
 
 
@@ -53,11 +47,8 @@ This script:
 4. Send test events
 
 In another terminal:
-bash
 
-
-1
-python3 producer.py
+  python3 producer.py
 
 
 
@@ -65,11 +56,8 @@ This generates mock user events (page_view, click, purchase) and sends them to K
 5. Query real-time metrics
 
 Use the included FastAPI service:
-bash
 
-
-1
-uvicorn api:app --reload
+  uvicorn api:app --reload
 
 
 
@@ -88,11 +76,8 @@ Data survives container restarts thanks to Docker volumes:
 
 
 To reset data:
-bash
 
-
-1
-docker compose down -v
+  docker compose down -v
 
 
 📁 Project Structure
@@ -114,4 +99,4 @@ docker compose down -v
 
 📜 License
 
-MIT 
+MIT
